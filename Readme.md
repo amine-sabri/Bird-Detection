@@ -36,7 +36,8 @@ pip install -r requirements.txt # METTEZ À JOUR PIP AVANT D'INSTALLER LES DÉPE
 ```
 ├── mcp_client.py                # API FastAPI principale avec Groq (orchestrateur + MCP client)
 ├── mcp_server.py                # Serveur MCP reliant le modèle spécialiste
-├── requirements.txt              # Dépendances Python
+├── requirements.txt
+├── ProjectCUB.ipynb               # Dépendances Python
 
 ├── ui/
 │   └── chatbot-bird/    Interface utilisateur (web/mobile/chatbot)
