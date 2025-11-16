@@ -28,7 +28,7 @@ cd Bird-Detection
 
 ### 3. Installer les dépendances
 ```bash
-pip install -r requirements.txt #METTRE À JOUR PIP AVANT D'INSTALLER LES EXIGENCES
+pip install -r requirements.txt # METTEZ À JOUR PIP AVANT D'INSTALLER LES DÉPENDANCES
 ```
 
 ---
