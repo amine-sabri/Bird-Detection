@@ -19,7 +19,7 @@ from mcp.client.stdio import stdio_client
 
 from groq import AsyncGroq
 
-GROQ_API_KEY = "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" 
+GROQ_API_KEY = "Mettre_Votre_Cler-ici" 
 GROQ_MODEL = "qwen/qwen3-32b"
 MCP_SERVER_SCRIPT = "/home/auder/Projects/dp/Bird-Detection/mcp_server.py"
 
