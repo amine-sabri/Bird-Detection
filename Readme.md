@@ -56,16 +56,12 @@ pip install -r requirements.txt # METTEZ À JOUR PIP AVANT D'INSTALLER LES DÉPE
 
 Créez un fichier .env à la racine du projet (Bird-Detection/) avec ceci :
 
-GROQ_API_KEY=votre_cle_api
-GROQ_MODEL=qwen/qwen3-32b
-MCP_SERVER_SCRIPT=/chemin/absolu/vers/mcp_server.py
+GROQ_API_KEY=votre_cle_api         # Votre clé API Groq
 
+GROQ_MODEL=qwen/qwen3-32b          # Le modèle Groq à utiliser
 
-GROQ_API_KEY : votre clé API Groq
+MCP_SERVER_SCRIPT=/chemin/absolu/vers/mcp_server.py  # Chemin absolu vers mcp_server.py
 
-GROQ_MODEL : le modèle Groq à utiliser
-
-MCP_SERVER_SCRIPT : chemin absolu vers mcp_server.py
 ```
 
 ---
