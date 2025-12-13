@@ -13,19 +13,20 @@ from contextlib import asynccontextmanager, AsyncExitStack
 import base64
 from fastapi.middleware.cors import CORSMiddleware
 from io import BytesIO
-
+from dotenv import load_dotenv
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
 from groq import AsyncGroq
 
-GROQ_API_KEY = "Mettre_Votre_Cler-ici" 
-GROQ_MODEL = "qwen/qwen3-32b"
-MCP_SERVER_SCRIPT = "/home/auder/Projects/dp/Bird-Detection/mcp_server.py"
+load_dotenv()
 
-groq_client = AsyncGroq(
-    api_key=os.getenv("GROQ_API_KEY", GROQ_API_KEY)
-)
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_MODEL = os.getenv("GROQ_MODEL")
+MCP_SERVER_SCRIPT = os.getenv("MCP_SERVER_SCRIPT")
+
+
+groq_client = AsyncGroq(api_key=GROQ_API_KEY)
 
 sessions_store: Dict[str, Dict] = {}
 
