@@ -25,26 +25,41 @@ L'API permet d'identifier des oiseaux à partir d'images (upload ou chemin de fi
 git clone https://github.com/amine-sabri/Bird-Detection.git
 cd Bird-Detection
 
-🧪 Création de l’environnement virtuel Python
-Cette étape permet d’isoler les dépendances du projet afin d’éviter tout conflit ⚙️
-
-🪟 Windows : py -m venv venv
 
 
-🐧🍎 Linux / macOS : python3 -m venv venv
-
-✅ Une fois activé, votre terminal affichera (venv) : vous êtes prêt à continuer ! 🚀
 
 
-👉 Tu peux **tout coller tel quel** dans ton `README.md` sans modification.  
-Si tu veux la suite (pip install, lancement API/UI, variables `.env`), je te la fais direct.
+
 
 
 
 
 ```
 
-### 3. Installer les dépendances
+### 3. Créer l’environnement virtuel
+```bash
+cd Bird-Detection
+
+# Créer l’environnement virtuel
+# Windows
+py -m venv venv
+
+# Linux / macOS
+python3 -m venv venv
+
+# Activer l’environnement virtuel
+# Windows (CMD / PowerShell)
+venv\Scripts\activate
+
+# Linux / macOS
+source venv/bin/activate
+
+# Installer les dépendances
+pip install -r requirements.txt # METTEZ À JOUR PIP AVANT D'INSTALLER LES DÉPENDANCES
+
+```
+
+### 4. Installer les dépendances
 ```bash
 pip install -r requirements.txt # METTEZ À JOUR PIP AVANT D'INSTALLER LES DÉPENDANCES
 ```
