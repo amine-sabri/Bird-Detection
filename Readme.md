@@ -29,9 +29,7 @@ cd Bird-Detection
 
 ### 3. Créer l’environnement virtuel
 ```bash
-cd Bird-Detection
 
-# Créer l’environnement virtuel
 # Windows
 py -m venv venv
 
