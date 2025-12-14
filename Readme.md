@@ -20,10 +20,28 @@ L'API permet d'identifier des oiseaux à partir d'images (upload ou chemin de fi
 - Un compte Groq avec API key (https://groq.com)  
 - Le modèle **ResNet-50** entraîné (`resnet50_cub.pth`) et le fichier `classes.txt`
 
-### 2. Cloner ou télécharger le projet
+### 2. Cloner ou télécharger le projet 
 ```bash
 git clone https://github.com/amine-sabri/Bird-Detection.git
 cd Bird-Detection
+
+🧪 Création de l’environnement virtuel Python
+Cette étape permet d’isoler les dépendances du projet afin d’éviter tout conflit ⚙️
+
+🪟 Windows : py -m venv venv
+
+
+🐧🍎 Linux / macOS : python3 -m venv venv
+
+✅ Une fois activé, votre terminal affichera (venv) : vous êtes prêt à continuer ! 🚀
+
+
+👉 Tu peux **tout coller tel quel** dans ton `README.md` sans modification.  
+Si tu veux la suite (pip install, lancement API/UI, variables `.env`), je te la fais direct.
+
+
+
+
 ```
 
 ### 3. Installer les dépendances
@@ -37,7 +55,7 @@ pip install -r requirements.txt # METTEZ À JOUR PIP AVANT D'INSTALLER LES DÉPE
 ├── mcp_client.py                # API FastAPI principale avec Groq (orchestrateur + MCP client)
 ├── mcp_server.py                # Serveur MCP reliant le modèle spécialiste
 ├── requirements.txt
-├── ProjectCUB.ipynb               # Dépendances Python
+├── EntrainementCUB.ipynb               # Dépendances Python
 
 ├── ui/
 │   └── chatbot-bird/    Interface utilisateur (web/mobile/chatbot)
