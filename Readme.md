@@ -25,15 +25,6 @@ L'API permet d'identifier des oiseaux à partir d'images (upload ou chemin de fi
 git clone https://github.com/amine-sabri/Bird-Detection.git
 cd Bird-Detection
 
-
-
-
-
-
-
-
-
-
 ```
 
 ### 3. Créer l’environnement virtuel
@@ -53,9 +44,6 @@ venv\Scripts\activate
 
 # Linux / macOS
 source venv/bin/activate
-
-# Installer les dépendances
-pip install -r requirements.txt # METTEZ À JOUR PIP AVANT D'INSTALLER LES DÉPENDANCES
 
 ```
 
