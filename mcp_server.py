@@ -14,6 +14,11 @@ except Exception:
     # fallback: fastmcp may be installed as a top-level package
     from fastmcp import FastMCP
 
+import os
+os.environ["PYTHONIOENCODING"] = "utf-8"
+
+import sys
+sys.stdout.reconfigure(encoding="utf-8", errors="strict")
 
 # Configure logging to stderr to avoid stdout pollution
 logging.basicConfig(

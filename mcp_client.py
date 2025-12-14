@@ -70,9 +70,9 @@ async def initialize_mcp():
         mcp_exit_stack = AsyncExitStack()
         
         server_params = StdioServerParameters(
-            command="python",
+            command=sys.executable,       # Python de l'environnement actuel
             args=["-u", MCP_SERVER_SCRIPT],
-            env=None
+            env=os.environ.copy()         # garde toutes les variables d'environnement du venv
         )
         
         print("🚀 Lancement du processus serveur MCP...")

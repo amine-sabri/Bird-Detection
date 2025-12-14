@@ -12,6 +12,7 @@ fastmcp==0.2.0
 
 # Groq API
 groq==0.11.0
+httpx<0.28
 
 # PyTorch et Vision
 torch==2.9.0
